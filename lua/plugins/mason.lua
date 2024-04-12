@@ -10,6 +10,7 @@ return {
       "mypy",
       "yamllint",
       "isort",
+      "debugpy",
     },
   },
 }

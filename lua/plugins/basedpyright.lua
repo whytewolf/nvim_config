@@ -1,5 +1,10 @@
+local lspconfig = require("lspconfig")
+
 return {
-  require("lspconfig").basedpyright.setup{
+  lspconfig.basedpyright.setup{
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {"python"},
     settings = {
       basedpyright = {
         analysis = {
