@@ -2,20 +2,26 @@ local dap_plugs = {
   {
     "rcarriga/nvim-dap-ui",
     dependencies = {
-      "mfussenegger/nvim-dap"
+      "mfussenegger/nvim-dap",
+      "nvim-neotest/nvim-nio",
     },
+    vim.keymap.set('n','<F6>', function() require('dapui').open() end),
+    vim.keymap.set('n','<F7>', function() require('dapui').close() end),
     config = function()
       local dap = require("dap")
       local dapui = require("dapui")
 
       dapui.setup()
-      dap.listeners.after.event_initialized["dapui_config"] = function()
+      dap.listeners.before.attach.dapui_config = function()
         dapui.open()
       end
-      dap.listeners.before.event_terminated["dapui_config"] = function()
+      dap.listeners.before.launch.dapui_config = function()
+        dapui.open()
+      end
+      dap.listeners.before.event_terminated.dapui_config = function()
         dapui.close()
       end
-      dap.listeners.before.event_exited["dapui_config"] = function()
+      dap.listeners.before.event_exited.dapui_config = function()
         dapui.close()
       end
     end,
@@ -38,7 +44,7 @@ local dap_plugs = {
     ft = "python",
     dependencis = {
       "mfussenegger/nvim-dap",
-      "rcarriga/nvim-dap-ui"
+      "rcarriga/nvim-dap-ui",
     },
     config = function()
       local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
