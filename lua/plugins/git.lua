@@ -34,7 +34,7 @@ local git_plugins = {
     end,
   },
   {
-    'hougesen/blame-me.nvim',
+    "hougesen/blame-me.nvim",
   },
 }
 
