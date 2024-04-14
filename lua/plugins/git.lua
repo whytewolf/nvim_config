@@ -41,6 +41,7 @@ local git_plugins = {
       delay = 200,
     }
   },
+  { "ttibsi/pre-commit.nvim" },
 }
 
 return git_plugins

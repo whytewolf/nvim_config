@@ -11,7 +11,10 @@ return {
     settings = {
       basedpyright = {
         analysis = {
-          typeCheckingMode = "standard"
+          typeCheckingMode = "standard",
+        },
+        diagnostics = {
+          defineConstent = {"__salt__"}
         }
       }
     }

@@ -27,6 +27,8 @@
   "nvim-treesitter": { "branch": "master", "commit": "f08a9d97f7a2ac02115a5c1c8e3973b2634d996b" },
   "nvim-web-devicons": { "branch": "master", "commit": "6e355632387a085f15a66ad68cf681c1d7374a04" },
   "plenary.nvim": { "branch": "master", "commit": "8aad4396840be7fc42896e3011751b7609ca4119" },
+  "pre-commit.nvim": { "branch": "main", "commit": "4a608cef0f0a196fa39cdc60579eb9cf601d21c4" },
+  "ruff-lsp": { "branch": "main", "commit": "18d26b7b3c6cc4a6286dab4253fb6ac55cb8bf8b" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "9ef21b2e6bb6ebeaf349a0781745549bbb870d27" },
   "telescope-github.nvim": { "branch": "master", "commit": "ee95c509901c3357679e9f2f9eaac3561c811736" },
   "telescope.nvim": { "branch": "master", "commit": "4d4ade7f2b8f403e8816ca50c05ed16e259b21fb" },
