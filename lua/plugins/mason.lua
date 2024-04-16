@@ -11,6 +11,7 @@ return {
       "yamllint",
       "isort",
       "debugpy",
+      "clangd",
     },
   },
 }

@@ -13,9 +13,6 @@ return {
         analysis = {
           typeCheckingMode = "standard",
         },
-        diagnostics = {
-          defineConstent = {"__salt__"}
-        }
       }
     }
   }
