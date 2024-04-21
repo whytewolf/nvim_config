@@ -3,6 +3,7 @@ return {
   opts = {
     ensure_installed = {
       "lua-language-server",
+      "vim-language-server",
       "stylua",
       "basedpyright",
       "black",
