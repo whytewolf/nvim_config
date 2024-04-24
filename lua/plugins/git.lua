@@ -9,15 +9,6 @@ local git_plugins = {
     },
   },
   {
-    "tpope/vim-fugitive",
-    event = "VeryLazy",
-    dependencies = {
-      "tpope/vim-rhubarb",
-      "tpope/vim-obsession",
-      "tpope/vim-unimpaired",
-    },
-  },
-  {
     "lewis6991/gitsigns.nvim",
     config = function ()
       require("gitsigns").setup({
