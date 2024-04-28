@@ -2,5 +2,8 @@
 
 originally a nvchad config. have started personalizing it.
 
-still learning the basics of nvim so bare with me as this is
-a work in progress.
+Things are starting to get interesting. 
+
+includes some python testing and definitions. 
+trying to add lua and markdown. not really started yet.
+also started adding c stuff. 
