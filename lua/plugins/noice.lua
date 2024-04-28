@@ -1,4 +1,5 @@
 local nioce = {
+  {
   "folke/noice.nvim",
   event = "VeryLazy",
   opts = {
@@ -32,6 +33,26 @@ local nioce = {
       }
     })
   end,
+  },
+    {
+      "nvim-treesitter/nvim-treesitter",
+      opts = {
+        ensure_installed = {
+          "vim",
+          "vimdoc",
+          "lua",
+          "luadoc",
+          "toml",
+          "yaml",
+          "json",
+          "markdown_inline",
+          "markdown",
+          "bash",
+          "regex",
+        },
+        auto_install = true,
+      },
+    }
 }
 
 

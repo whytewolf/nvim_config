@@ -42,7 +42,7 @@ local dap_plugs = {
   {
     "mfussenegger/nvim-dap-python",
     ft = "python",
-    dependencis = {
+    dependencies = {
       "mfussenegger/nvim-dap",
       "rcarriga/nvim-dap-ui",
     },
