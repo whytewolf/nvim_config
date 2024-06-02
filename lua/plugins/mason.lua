@@ -13,6 +13,9 @@ return {
       "isort",
       "debugpy",
       "clangd",
+      "ruff",
+      "gh",
+      "luacheck",
     },
   },
 }

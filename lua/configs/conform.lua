@@ -2,9 +2,9 @@ local options = {
   formatters_by_ft = {
     lua = { "stylua" },
     c = { "clangd" },
-    python = {"isort", "black"},
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    python = {"ruff"},
+    css = { "prettier" },
+    html = { "prettier" },
   },
 
   -- format_on_save = {
