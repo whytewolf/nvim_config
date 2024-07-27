@@ -16,6 +16,7 @@ return {
       "ruff",
       "gh",
       "luacheck",
+      "gotests",
     },
   },
 }
