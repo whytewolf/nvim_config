@@ -5,15 +5,14 @@ return {
     config = function()
       require "configs.conform"
 
-
-      vim.keymnap.set({ "n", "v"}, "<leader>mp", function()
-        local conform = require("configs.conform")
-        conform.format({
+      vim.keymap.set({ "n", "v" }, "<leader>mp", function()
+        local conform = require "configs.conform"
+        conform.format {
           lsp_fallback = true,
           async = false,
           timeout_ms = 500,
-      })
-      end, { desc = "Format file or range (in visual mode)"})
+        }
+      end, { desc = "Format file or range (in visual mode)" })
     end,
   },
 
