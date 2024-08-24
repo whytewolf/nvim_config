@@ -9,6 +9,6 @@ Things are starting to get interesting.
 * added basedpyright and ruff
 * added some minor c stuff
 * python testing and definitions
-* added lazygit activated by <leader>git
+* added lazygit activated by \<leader\>git
 
 
