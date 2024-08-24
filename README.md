@@ -4,6 +4,11 @@ originally a nvchad config. have started personalizing it.
 
 Things are starting to get interesting. 
 
-includes some python testing and definitions. 
-trying to add lua and markdown. not really started yet.
-also started adding c stuff. 
+* added Markdown rendering
+* added the start of go
+* added basedpyright and ruff
+* added some minor c stuff
+* python testing and definitions
+* added lazygit activated by <leader>git
+
+
