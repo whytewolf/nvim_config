@@ -18,3 +18,4 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close tab" })
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "open current buffer in nw tab" })
+
