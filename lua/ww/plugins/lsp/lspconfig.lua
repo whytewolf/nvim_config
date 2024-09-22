@@ -71,7 +71,6 @@ return {
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
 		-- Change the Diagnostic symbols in the sign column (gutter)
-		-- (not in youtube nvim video)
 		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
 		for type, icon in pairs(signs) do
 			local hl = "DiagnosticSign" .. type
@@ -105,7 +104,18 @@ return {
 			["basedpyright"] = function()
 				lspconfig["basedpyright"].setup({
 					capabilities = capabilities,
-					filetypes = { "python" },
+					settings = {
+						basedpyright = {
+							analysis = {
+								typeCheckingMode = "strict",
+							},
+						},
+					},
+				})
+			end,
+			["ruff_lsp"] = function()
+				lspconfig["ruff_lsp"].setup({
+					capabilities = capabilities,
 				})
 			end,
 		})
