@@ -30,8 +30,9 @@ return {
 				"basedpyright",
 				"clangd",
 				"lua_ls",
-				"ruff-lsp",
+				"ruff_lsp",
 				"taplo",
+				"jqls",
 			},
 		})
 

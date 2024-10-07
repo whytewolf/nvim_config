@@ -11,10 +11,11 @@ return {
 	},
 	config = function()
 		require("neotest").setup({
+			log_level = vim.log.levels.DEBUG,
 			adapters = {
 				require("neotest-python")({
 					dap = { justMyCode = false },
-					args = { "--log-level", "DEBUG" },
+					args = { "--cov=src", "--log-level", "DEBUG" },
 					runner = "pytest",
 				}),
 				require("neotest-plenary"),

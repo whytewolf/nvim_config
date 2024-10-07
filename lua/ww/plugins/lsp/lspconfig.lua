@@ -116,6 +116,9 @@ return {
 			["ruff_lsp"] = function()
 				lspconfig["ruff_lsp"].setup({
 					capabilities = capabilities,
+					settings = {
+						args = {},
+					},
 				})
 			end,
 		})
