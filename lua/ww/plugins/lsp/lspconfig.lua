@@ -113,8 +113,8 @@ return {
 					},
 				})
 			end,
-			["ruff_lsp"] = function()
-				lspconfig["ruff_lsp"].setup({
+			["ruff"] = function()
+				lspconfig["ruff"].setup({
 					capabilities = capabilities,
 					settings = {
 						args = {},

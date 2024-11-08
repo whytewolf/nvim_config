@@ -11,6 +11,9 @@ return {
 				yaml = { "prettier" },
 				markdown = { "prettier" },
 				lua = { "stylua" },
+				python = { "ruff", "mypy" },
+				cpp = { "clang_format" },
+				cmake = { "cmake_format" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
