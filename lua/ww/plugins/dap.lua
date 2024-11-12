@@ -72,6 +72,17 @@ return {
 		config = function()
 			local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
 			require("dap-python").setup(path)
+			table.insert(require("dap").configurations.python, {
+				justMyCode = false,
+				type = "python",
+				request = "launch",
+				name = "python with arugments",
+				program = "${file}",
+				args = function()
+					local args_str = vim.fn.input("Arguments: ")
+					return vim.split(args_str, " ")
+				end,
+			})
 		end,
 	},
 }
