@@ -19,6 +19,9 @@ return {
 				enable = true,
 			},
 
+			sync_install = true,
+			auto_install = true,
+
 			ensure_installed = {
 				"vim",
 				"vimdoc",
@@ -38,6 +41,7 @@ return {
 				"tmux",
 				"go",
 				"css",
+				"html",
 			},
 			incremental_selection = {
 				enable = true,
