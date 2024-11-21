@@ -33,10 +33,6 @@ return {
 				dapui.close()
 			end, { desc = "Close debugging UI" })
 
-			keymap.set("n", "<leader>dr", function()
-				dap.continue()
-			end, { desc = "Debug Run" })
-
 			keymap.set("n", "<leader>dso", function()
 				dap.step_over()
 			end, { desc = "Step Over function" })
@@ -72,17 +68,40 @@ return {
 		config = function()
 			local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
 			require("dap-python").setup(path)
-			table.insert(require("dap").configurations.python, {
-				justMyCode = false,
-				type = "python",
-				request = "launch",
-				name = "python with arugments",
-				program = "${file}",
-				args = function()
-					local args_str = vim.fn.input("Arguments: ")
-					return vim.split(args_str, " ")
-				end,
-			})
+		end,
+	},
+	{
+		"kndndrj/nvim-projector",
+		dependencies = {
+			-- required:
+			"MunifTanjim/nui.nvim",
+			-- optional extensions:
+			"kndndrj/projector-neotest",
+			-- dependencies of extensions:
+			"nvim-neotest/neotest",
+		},
+		config = function()
+			local projector = require("projector")
+			local keymap = vim.keymap
+			require("projector").setup(--[[optional config]])
+			keymap.set("n", "<leader>dr", function()
+				projector.continue()
+			end, { desc = "Debug Run" })
+			keymap.set("n", "<leader>pt", function()
+				projector.toggle()
+			end, { desc = "Projector toggle" })
+			keymap.set("n", "<leader>pn", function()
+				projector.next()
+			end, { desc = "Projector next" })
+			keymap.set("n", "<leader>pp", function()
+				projector.previous()
+			end, { desc = "Projector previous" })
+			keymap.set("n", "<leader>pr", function()
+				projector.reset()
+			end, { desc = "Projector reset" })
+			keymap.set("n", "<leader>pk", function()
+				projector.kill()
+			end, { desc = "Projector kill" })
 		end,
 	},
 }

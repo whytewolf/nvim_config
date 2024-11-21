@@ -28,6 +28,7 @@ return {
 		telescope.load_extension("fzf")
 		telescope.load_extension("gh")
 		telescope.load_extension("dap")
+		telescope.load_extension("projects")
 
 		local keymap = vim.keymap
 
@@ -45,5 +46,6 @@ return {
 		keymap.set("n", "<leader>tdb", "<cmd>Telescope dap list_breakpoints<cr>", { desc = "DAP Breakpoints" })
 		keymap.set("n", "<leader>tdv", "<cmd>Telescope dap variables<cr>", { desc = "DAP Variables" })
 		keymap.set("n", "<leader>tdf", "<cmd>Telescope dap frames<cr>", { desc = "DAP Frames" })
+		keymap.set("n", "<leader>tp", "<cmd>Telescope projects<cr>", { desc = "Projects" })
 	end,
 }
