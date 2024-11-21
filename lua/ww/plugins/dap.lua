@@ -71,6 +71,17 @@ return {
 		end,
 	},
 	{
+		"leoluz/nvim-dap-go",
+		ft = { "go" },
+		dependencies = {
+			"mfussenegger/nvim-dap",
+			"rcarriga/nvim-dap-ui",
+		},
+		config = function()
+			require("dap-go").setup()
+		end,
+	},
+	{
 		"kndndrj/nvim-projector",
 		dependencies = {
 			-- required:
