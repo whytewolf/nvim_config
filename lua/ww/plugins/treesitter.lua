@@ -42,6 +42,7 @@ return {
 				"go",
 				"css",
 				"html",
+				"rust",
 			},
 			incremental_selection = {
 				enable = true,

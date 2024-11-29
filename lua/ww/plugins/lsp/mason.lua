@@ -30,9 +30,10 @@ return {
 				"basedpyright",
 				"clangd",
 				"lua_ls",
-        "ruff",
+				"ruff",
 				"taplo",
 				"jqls",
+				"codelldb",
 			},
 		})
 
@@ -46,6 +47,7 @@ return {
 				"debugpy",
 				"yamllint",
 				"mypy",
+				"codelldb",
 			},
 		})
 	end,
