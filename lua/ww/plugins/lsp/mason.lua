@@ -33,7 +33,6 @@ return {
 				"ruff",
 				"taplo",
 				"jqls",
-				"codelldb",
 			},
 		})
 
