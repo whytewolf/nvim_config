@@ -6,14 +6,37 @@ return {
   opts = {
     bigfile = { enabled = true },
     dashboard = { enabled = true },
-    explorer = { enabled = true },
+    explorer = {
+      enabled = true,
+      ui_select = true,
+    },
     indent = { enabled = true },
     input = { enabled = true },
     notifier = {
       enabled = true,
       timeout = 3000,
     },
-    picker = { enabled = true },
+    picker = {
+      enabled = true,
+      sources = {
+        explorer = {
+          win = {
+            input = {
+              keys = {
+                ["<S-t>"] = { "tab", mode = { "n", "i"} },
+                ["<C-q>"] = { "qflist", mode = { "n", "i" } },
+              },
+            },
+            list = {
+              keys = {
+                ["<S-t>"] = { "tab", mode = { "n", "i"} },
+                ["<C-q>"] = { "qflist", mode = { "n", "i" } },
+              },
+            },
+          },
+        },
+      },
+    },
     quickfile = { enabled = true },
     scope = { enabled = true },
     scroll = { enabled = true },
