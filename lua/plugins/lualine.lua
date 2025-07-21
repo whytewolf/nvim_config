@@ -77,19 +77,14 @@ return {
         lualine_y = {},
         lualine_z = {}
       },
-      tabline = { 
+      tabline = {
         lualine_a = { 'filename' },
-        lualine_z = { tabline_tabs } 
+        lualine_z = { tabline_tabs }
       },
       winbar = {},
       inactive_winbar = {},
-      extensions = { 'lazy', 'mason', 'nvim-dap-ui' } 
+      extensions = { 'lazy', 'mason', 'nvim-dap-ui' }
     })
     vim.o.showtabline = 1
-    vim.diagnostic.config({
-      virtual_lines = {
-        current_line = true,
-      },
-    })
   end,
 }
