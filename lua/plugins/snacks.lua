@@ -4,7 +4,22 @@ return {
   lazy = false,
   opts = {
     bigfile = { enabled = true },
-    dashboard = { enabled = true },
+    dashboard = {
+      enabled = true,
+      sections = {
+        {
+          section = "terminal",
+          cmd = "chafa ~/.config/nvim/watch.small.jpg --format symbols --symbols vhalf --size 60x17 --stretch; sleep .1",
+          height = 17,
+          padding = 1,
+        },
+        {
+          pane = 2,
+          { section = "keys", gap = 1, padding = 1 },
+          { section = "startup" },
+        },
+      },
+    },
     explorer = {
       enabled = true,
       ui_select = true,
@@ -39,7 +54,7 @@ return {
     quickfile = { enabled = true },
     scope = { enabled = true },
     scroll = { enabled = true },
-    statuscolumn = { enabled = true },
+    statuscolumn = { enabled = false },
     words = { enabled = true },
     styles = {
       notification = {
@@ -71,7 +86,6 @@ return {
     { "<leader>gd", function() Snacks.picker.git_diff() end, desc = "Git Diff (Hunks)" },
     { "<leader>gf", function() Snacks.picker.git_log_file() end, desc = "Git Log File" },
     -- Grep
-    { "<leader>sb", function() Snacks.picker.lines() end, desc = "Buffer Lines" },
     { "<leader>sB", function() Snacks.picker.grep_buffers() end, desc = "Grep Open Buffers" },
     { "<leader>sg", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>sw", function() Snacks.picker.grep_word() end, desc = "Visual selection or word", mode = { "n", "x" } },
