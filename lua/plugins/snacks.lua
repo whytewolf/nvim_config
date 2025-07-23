@@ -9,7 +9,7 @@ return {
       sections = {
         {
           section = "terminal",
-          cmd = "chafa ~/.config/nvim/watch.small.jpg --format symbols --symbols vhalf --size 60x17 --stretch; sleep .1",
+          cmd = "chafa ~/.config/nvim/watch.small.jpg --format symbols --symbols vhalf --size 60x17 --stretch",
           height = 17,
           padding = 1,
         },
