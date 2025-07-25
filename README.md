@@ -1,5 +1,7 @@
-##Whytewolfs Neovim config done in 2025. This setup changes a few things. 
+## Neovim config for 2025 for 0.11
 
-* switch to snacks.
-* update lsp_config to newer 0.11 style config. this was a nice breath of fresh air.
+* Switch many plugins into snacks. Allowing a much cleaner and smaller config.
+* switch to updated lspconfig style that works with nvim 0.11 built in lsp handaling
+* work out minor bugs that were bugging me in old config and breaking in 0.11
+
 
