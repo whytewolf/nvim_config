@@ -3,6 +3,7 @@ return {
   priority = 1000,
   lazy = false,
   opts = {
+    animate = { enabled = true },
     bigfile = { enabled = true },
     dashboard = {
       enabled = true,
@@ -34,7 +35,10 @@ return {
     picker = {
       enabled = true,
       sources = {
-        explorer = {},
+        explorer = {
+          focus = 'input',
+          auto_close = true,
+        },
       },
     },
     quickfile = { enabled = true },

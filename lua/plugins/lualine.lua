@@ -1,24 +1,36 @@
 return {
-  "nvim-lualine/lualine.nvim",
+  'nvim-lualine/lualine.nvim',
   dependencies = { 'nvim-tree/nvim-web-devicons' },
   config = function()
     local ft = {
-      "filetype",
+      'filetype',
       colored = true,
       icon_only = true,
     }
 
-    local trouble = require("trouble")
-    local symbols = trouble.statusline({
-      mode = "lsp_document_symbols",
+    local trouble = require 'trouble'
+    local symbols = trouble.statusline {
+      mode = 'lsp_document_symbols',
       groups = {},
       title = false,
       filter = { range = true },
-      format = "{kind_icon}{symbol.name:Normal}",
-      hl_group = "lualine_c_normal"
-    })
+      format = '{kind_icon}{symbol.name:Normal}',
+      hl_group = 'lualine_c_normal',
+    }
+    local buffer_tabs = {
+      'buffers',
+      show_filename_only = true,
+      hide_filename_extension = false,
+      show_modified_status = true,
+      mode = 2,
+      use_mode_colors = true,
+
+      symbols = {
+        modified = '',
+      },
+    }
     local tabline_tabs = {
-      "tabs",
+      'tabs',
       tab_max_length = 10,
       max_length = vim.o.columns / 3,
       mode = 2,
@@ -26,15 +38,14 @@ return {
       use_mode_colors = true,
       symbols = {
         modified = '',
-      }
-
+      },
     }
-    require("lualine").setup({
+    require('lualine').setup {
       options = {
         icons_enabled = true,
-        theme = "tokyonight",
-        component_separators = { left = '', right = ''},
-        section_separators = { left = '', right = ''},
+        theme = 'tokyonight',
+        component_separators = { left = '', right = '' },
+        section_separators = { left = '', right = '' },
         disabled_filetypes = {
           statusline = {},
           winbar = {},
@@ -60,31 +71,31 @@ return {
             'CursorMovedI',
             'ModeChanged',
           },
-        }
+        },
       },
       sections = {
-        lualine_a = {'mode'},
-        lualine_b = {'branch', 'diff', 'diagnostics'},
+        lualine_a = { 'mode' },
+        lualine_b = { 'branch', 'diff', 'diagnostics' },
         lualine_c = { { symbols.get, cond = symbols.has } },
-        lualine_x = {'encoding', 'fileformat', ft},
-        lualine_y = {'progress'},
-        lualine_z = {'location'}
+        lualine_x = { 'encoding', 'fileformat', ft },
+        lualine_y = { 'progress' },
+        lualine_z = { 'location' },
       },
       inactive_sections = {
         lualine_a = {},
         lualine_b = {},
-        lualine_x = {'location'},
+        lualine_x = { 'location' },
         lualine_y = {},
-        lualine_z = {}
+        lualine_z = {},
       },
       tabline = {
         lualine_a = { 'filename' },
-        lualine_z = { tabline_tabs }
+        lualine_z = { buffer_tabs },
       },
       winbar = {},
       inactive_winbar = {},
-      extensions = { 'lazy', 'mason', 'nvim-dap-ui' }
-    })
+      extensions = { 'lazy', 'mason', 'nvim-dap-ui' },
+    }
     vim.o.showtabline = 1
   end,
 }
