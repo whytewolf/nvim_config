@@ -1,17 +1,17 @@
 return {
   {
-    "folke/tokyonight.nvim",
+    'folke/tokyonight.nvim',
     lazy = false,
     priority = 1000,
 
     opts = {
-      style = "storm",
+      style = 'storm',
       transparent = true,
       styles = {
-        sidebars = "transparent",
+        sidebars = 'transparent',
         keywords = { bold = true },
         functions = { bold = true },
-        floats = "transparent",
+        floats = 'transparent',
       },
     },
   },

@@ -6,7 +6,6 @@ vim.g.maplocalleader = ' '
 -- setup the having of nerd fonts
 vim.g.have_nerd_font = true
 
-
 -- setup proper indentation
 vim.o.expandtab = true
 vim.o.smartindent = true
@@ -24,7 +23,7 @@ vim.o.mouse = 'a'
 vim.o.showmode = false
 
 vim.schedule(function()
-  vim.o.clipboard = "unnamedplus"
+  vim.o.clipboard = 'unnamedplus'
 end)
 
 vim.o.breakindent = true
