@@ -52,6 +52,7 @@ return {
       },
     },
   },
+  -- TODO: clean up key bindings.
   keys = {
     -- Top Pickers & Explorer
     {
