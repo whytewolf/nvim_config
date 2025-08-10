@@ -1,5 +1,9 @@
 return {
   'folke/snacks.nvim',
+  dependencies = {
+    'nvim-tree/nvim-web-devicons',
+    'echasnovski/mini.icons',
+  },
   priority = 1000,
   lazy = false,
   opts = {
@@ -23,7 +27,7 @@ return {
       sections = {
         {
           section = 'terminal',
-          cmd = 'chafa ~/.config/nvim/watch.small.jpg --probe off --format symbols --symbols vhalf --size 60x17 --stretch',
+          cmd = 'chafa ~/.config/nvim/watch.small.jpg --probe off --format symbols --symbols vhalf --size 60x17 --stretch; sleep 1',
           height = 17,
           padding = 1,
         },
