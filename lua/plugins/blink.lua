@@ -18,6 +18,9 @@ return {
         nerd_font_variant = 'mono',
       },
       completion = {
+        accept = {
+          auto_brackets = { enabled = true },
+        },
         documentation = { auto_show = true },
         menu = {
           draw = {
@@ -42,13 +45,5 @@ return {
       fuzzy = { implementation = 'prefer_rust_with_warning' },
     },
     opts_extend = { 'sources.default' },
-  },
-  {
-    'saghen/blink.pairs',
-    version = '*', -- (recommended) only required with prebuilt binaries
-
-    -- download prebuilt binaries from github releases
-    dependencies = 'saghen/blink.download',
-    opts = {},
   },
 }
