@@ -10,7 +10,13 @@ return {
   },
   {
     'saghen/blink.cmp',
-    dependencies = { 'rafamadriz/friendly-snippets', 'fang2hou/blink-copilot' },
+    dependencies = {
+      'rafamadriz/friendly-snippets',
+      'fang2hou/blink-copilot',
+      'mikavilpas/blink-ripgrep.nvim',
+      'L3MON4D3/LuaSnip',
+      'moyiz/blink-emoji.nvim',
+    },
     version = '1.*',
     opts = {
       keymap = { preset = 'default' },
@@ -31,14 +37,32 @@ return {
           },
         },
       },
+      snippets = { preset = 'luasnip' },
       sources = {
-        default = { 'lsp', 'path', 'snippets', 'buffer', 'copilot' },
+        default = { 'lsp', 'path', 'snippets', 'buffer', 'ripgrep', 'emoji', 'copilot' },
         providers = {
           copilot = {
             name = 'copilot',
             module = 'blink-copilot',
             score_offset = 100,
             async = true,
+          },
+          ripgrep = {
+            module = 'blink-ripgrep',
+            name = 'Ripgrep',
+            opts = {
+              prefix_min_len = 5,
+            },
+          },
+          emoji = {
+            module = 'blink-emoji',
+            name = 'Emoji',
+            score_offset = 15,
+            opts = {
+              trigger = function()
+                return { ':' }
+              end,
+            },
           },
         },
       },

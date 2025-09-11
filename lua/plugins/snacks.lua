@@ -27,7 +27,7 @@ return {
       sections = {
         {
           section = 'terminal',
-          cmd = 'chafa ~/.config/nvim/watch.small.jpg --probe off --format symbols --symbols vhalf --size 60x17 --stretch; sleep 1',
+          cmd = 'cat ' .. vim.fn.stdpath 'config' .. '/watch.txt',
           height = 17,
           padding = 1,
         },
