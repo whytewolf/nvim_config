@@ -2,6 +2,8 @@ local dap = require 'dap'
 local dapui = require 'dapui'
 local dwidgts = require 'dap.ui.widgets'
 local keymap = vim.keymap
+local sidekick = require 'sidekick'
+local sidekick_cli = require 'sidekick.cli'
 
 keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
@@ -345,3 +347,29 @@ keymap.set('n', '<leader>xQ', '<cmd>Trouble qflist toggle<cr>', { desc = 'Quickf
 keymap.set({ 'n', 'v' }, '<leader>aia', '<cmd>CodeCompanionActions<cr>', { desc = 'Open CodeCompanion Actions menu' })
 keymap.set({ 'n', 'v' }, '<leader>aiC', '<cmd>CodeCompanionChat Toggle<cr>', { desc = 'Open AI Chat client' })
 keymap.set({ 'v' }, '<leader>aiA', '<cmd>CodeCompanionChat Add<cr>', { desc = 'Add selection to AI Chat client' })
+
+-- Sidekick keymaps
+keymap.set('n', '<tab>', function()
+  if not sidekick.nes_jump_or_apply() then
+    return '<Tab>'
+  end
+end, { desc = 'Goto/Apply Next Edit Suggestion' })
+
+keymap.set('n', '<leader>aa', function()
+  sidekick_cli.toggle()
+end, { desc = 'Sidekick Toggle CLI' })
+keymap.set('n', '<leader>as', function()
+  sidekick_cli.select()
+end, { desc = 'Select CLI' })
+keymap.set({ 'x', 'n' }, '<leader>at', function()
+  sidekick_cli.send { msg = '{this}' }
+end, { desc = 'Send This' })
+keymap.set('x', '<leader>av', function()
+  sidekick_cli.send { msg = '{selection}' }
+end, { desc = 'Send visual Selection' })
+keymap.set({ 'x', 'n' }, '<leader>ap', function()
+  sidekick_cli.prompt()
+end, { desc = 'Sidekick Select Prompt' })
+keymap.set({ 'n', 'x', 'i', 't' }, '<c-.>', function()
+  sidekick_cli.focus()
+end, { desc = 'Sidekick Switch focus' })
