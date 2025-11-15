@@ -9,7 +9,6 @@ return {
       { 'nvim-neotest/neotest' },
       { 'nvim-neotest/neotest-python' },
     },
-    ---@type python.Config
     opts = { ---@diagnostic disable-line: missing-fields`
     },
   },

@@ -54,9 +54,9 @@ return {
       },
     },
     explorer = {
-      enabled = true,
+      enabled = false,
       ui_select = true,
-      replace_netrw = true,
+      replace_netrw = false,
     },
     indent = { enabled = true },
     input = { enabled = true },
@@ -64,6 +64,7 @@ return {
       enabled = true,
       timeout = 3000,
     },
+    gh = {},
     picker = {
       enabled = true,
       sources = {
@@ -71,12 +72,15 @@ return {
           focus = 'input',
           auto_close = true,
         },
+        gh_issue = {},
+        gh_pr = {},
       },
     },
     quickfile = { enabled = true },
     scope = { enabled = true },
     scroll = { enabled = true },
     statuscolumn = { enabled = true },
+    terminal = {},
     words = { enabled = true },
     styles = {
       notification = {
