@@ -3,7 +3,7 @@
   "LuaSnip": { "branch": "master", "commit": "3732756842a2f7e0e76a7b0487e9692072857277" },
   "blink-copilot": { "branch": "main", "commit": "7ad8209b2f880a2840c94cdcd80ab4dc511d4f39" },
   "blink-emoji.nvim": { "branch": "master", "commit": "066013e4c98a9318408ee3f1ca2dbcb6fa3e4c06" },
-  "blink-ripgrep.nvim": { "branch": "main", "commit": "a11c2b82d68429bd96dbd71c6418a01c234d38e6" },
+  "blink-ripgrep.nvim": { "branch": "main", "commit": "502749878f4e586ff3c319fd0a958ed2930d7992" },
   "blink.cmp": { "branch": "main", "commit": "b19413d214068f316c78978b08264ed1c41830ec" },
   "cobalt.nvim": { "branch": "main", "commit": "9a5e401a686cfb7ad08acae8c4430ac28138d023" },
   "codecompanion.nvim": { "branch": "main", "commit": "e7762c68daf24c3e356401f5223eeb5217047754" },
