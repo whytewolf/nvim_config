@@ -3,10 +3,12 @@ return {
   lazy = false,
   build = ':TSUpdate',
   config = function()
-    local configs = require 'nvim-treesitter.configs'
+    local configs = require 'nvim-treesitter'
 
     configs.setup {
-      ensure_installed = {
+      install_dir = vim.fn.stdpath('data') .. '/site'
+    }
+    configs.install({
         'c',
         'lua',
         'vim',
@@ -24,11 +26,7 @@ return {
         'norg',
         'tsx',
         'typst',
-        'vue',
-      },
-      sync_install = false,
-      highlight = { enable = true },
-      indent = { enable = true },
-    }
+        'vue'
+    })
   end,
 }

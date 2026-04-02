@@ -3,6 +3,9 @@ return {
     'zbirenbaum/copilot.lua',
     cmd = 'Copilot',
     event = 'InsertEnter',
+    dependencies = {
+      'copilotlsp-nvim/copilot-lsp',
+    },
     opts = {
       suggestion = { enabled = false },
       panel = { enabled = false },
