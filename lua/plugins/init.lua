@@ -34,6 +34,9 @@ vim.pack.add({
   'https://github.com/sphamba/smear-cursor.nvim',
   'https://github.com/nvim-lualine/lualine.nvim',
   'https://github.com/folke/trouble.nvim',
+  'https://github.com/folke/noice.nvim',
+  'https://github.com/MunifTanjim/nui.nvim',
+  'https://github.com/rcarriga/nvim-notify',
 })
 
 require("plugins.lspconfig")
@@ -49,3 +52,4 @@ require("plugins.neotest")
 require("plugins.pixel")
 require("plugins.smear")
 require("plugins.lualine")
+require("plugins.noice")
