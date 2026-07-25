@@ -102,3 +102,7 @@ init = function()
   })
 end
 init()
+
+
+require("aerial").snacks_picker()
+

@@ -4,6 +4,7 @@ require("plugins.pack_gui")
 
 vim.pack.add({
 	'https://github.com/ibhagwan/fzf-lua',
+  'https://github.com/stevearc/aerial.nvim',
   'https://github.com/nvim-treesitter/nvim-treesitter',
 	'https://github.com/folke/snacks.nvim',
 	'https://github.com/folke/which-key.nvim',
@@ -34,8 +35,12 @@ vim.pack.add({
   'https://github.com/sphamba/smear-cursor.nvim',
   'https://github.com/nvim-lualine/lualine.nvim',
   'https://github.com/folke/trouble.nvim',
+  'https://github.com/folke/noice.nvim',
+  'https://github.com/MunifTanjim/nui.nvim',
+  'https://github.com/rcarriga/nvim-notify',
 })
 
+require("plugins.aerial")
 require("plugins.lspconfig")
 require("plugins.treesitter")
 require("plugins.snacks")
@@ -49,3 +54,4 @@ require("plugins.neotest")
 require("plugins.pixel")
 require("plugins.smear")
 require("plugins.lualine")
+require("plugins.noice")
