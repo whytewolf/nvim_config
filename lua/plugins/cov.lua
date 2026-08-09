@@ -1,0 +1,1 @@
+require("crazy-coverage").setup()
