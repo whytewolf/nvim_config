@@ -17,7 +17,7 @@
       "src": "https://github.com/moyiz/blink-emoji.nvim"
     },
     "blink-ripgrep.nvim": {
-      "rev": "9dac80da0b15582c5d7f13386d3ac175b43ceea1",
+      "rev": "b968ff7dfe6d6445de8903a5feaee592b6c596e8",
       "src": "https://github.com/mikavilpas/blink-ripgrep.nvim"
     },
     "blink.cmp": {
