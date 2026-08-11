@@ -39,6 +39,7 @@ vim.pack.add({
   'https://github.com/MunifTanjim/nui.nvim',
   'https://github.com/rcarriga/nvim-notify',
   'https://github.com/mr-u0b0dy/crazy-coverage.nvim',
+  'https://github.com/mason-org/mason.nvim',
 })
 
 require("plugins.aerial")
@@ -57,3 +58,4 @@ require("plugins.smear")
 require("plugins.lualine")
 require("plugins.noice")
 require("plugins.cov")
+require("plugins.mason")
