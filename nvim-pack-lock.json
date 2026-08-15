@@ -32,6 +32,10 @@
       "rev": "028a436fe2f5d3c6bde1b3a8db143258cb7bf0a3",
       "src": "https://github.com/mr-u0b0dy/crazy-coverage.nvim"
     },
+    "dooing": {
+      "rev": "4c4ac78088cf462398a0206e79669936a184175f",
+      "src": "https://github.com/atiladefreitas/dooing"
+    },
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"

@@ -40,6 +40,7 @@ vim.pack.add({
   'https://github.com/rcarriga/nvim-notify',
   'https://github.com/mr-u0b0dy/crazy-coverage.nvim',
   'https://github.com/mason-org/mason.nvim',
+  'https://github.com/atiladefreitas/dooing',
 })
 
 require("plugins.aerial")
@@ -59,3 +60,4 @@ require("plugins.lualine")
 require("plugins.noice")
 require("plugins.cov")
 require("plugins.mason")
+require("plugins.dooing")
