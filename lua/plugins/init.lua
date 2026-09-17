@@ -41,6 +41,9 @@ vim.pack.add({
   'https://github.com/mr-u0b0dy/crazy-coverage.nvim',
   'https://github.com/mason-org/mason.nvim',
   'https://github.com/atiladefreitas/dooing',
+  'https://github.com/tpope/vim-dadbod',
+  'https://github.com/kristijanhusak/vim-dadbod-ui',
+  'https://github.com/kristijanhusak/vim-dadbod-completion'
 })
 
 require("plugins.aerial")
@@ -61,3 +64,4 @@ require("plugins.noice")
 require("plugins.cov")
 require("plugins.mason")
 require("plugins.dooing")
+require("plugins.db")
