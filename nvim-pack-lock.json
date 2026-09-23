@@ -17,11 +17,11 @@
       "src": "https://github.com/moyiz/blink-emoji.nvim"
     },
     "blink-ripgrep.nvim": {
-      "rev": "eec58ad5fa71ee935b382fc6b5863be6bb9caa03",
+      "rev": "0e27566da4f70e61d0c0f2821bb71ae745e71364",
       "src": "https://github.com/mikavilpas/blink-ripgrep.nvim"
     },
     "blink.cmp": {
-      "rev": "473c928d8b9b5b3f638cd085a01899972cf205c6",
+      "rev": "8219b58f1c11a2fb1644d3c7116c509fa8348ec0",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "blink.lib": {
@@ -29,11 +29,11 @@
       "src": "https://github.com/saghen/blink.lib"
     },
     "crazy-coverage.nvim": {
-      "rev": "60ef7aefb6c4fe0a5b263f6302cc7e932e7a77e8",
+      "rev": "0b1b6af31450230fffbfe7d71df66f4d6a3e6770",
       "src": "https://github.com/mr-u0b0dy/crazy-coverage.nvim"
     },
     "dooing": {
-      "rev": "8134f408bfff0e0ff7c5cf7f424b67b6cf429717",
+      "rev": "7ff620e11d023331403883280711e26d351809c6",
       "src": "https://github.com/atiladefreitas/dooing"
     },
     "friendly-snippets": {
@@ -41,7 +41,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "fzf-lua": {
-      "rev": "05e44d38de0a79c11fba5f7bf8138791b1dbdd1e",
+      "rev": "13bb178a299f7493dd64427a58e61904c4b58ecb",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "lualine.nvim": {
@@ -81,7 +81,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "ac9d2f7c4757db6320cab6697fe73e5e8adb2457",
+      "rev": "ffd261c09c3dabd0bf1a438f47a8ae3b22f3c3ff",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -93,11 +93,11 @@
       "src": "https://github.com/rcarriga/nvim-notify"
     },
     "nvim-treesitter": {
-      "rev": "de9f0f3dbdab1952f136dc7bd67ff3bafdf994da",
+      "rev": "f603a2f4da48728f80257fb5fbb90145fd1dc173",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
-      "rev": "5f032a85be210cd1c6ac98861eb3b187ff3bd5eb",
+      "rev": "58447c1fca354bbf184425e4a8d01deecbd6f3c4",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
@@ -126,7 +126,7 @@
       "src": "https://github.com/folke/sidekick.nvim"
     },
     "smear-cursor.nvim": {
-      "rev": "9e9378d6ee34bb3782e0e8c63d9ec8ca618b479b",
+      "rev": "f63ff221158b5b0ca9de1d7d1ff2e0dce5649614",
       "src": "https://github.com/sphamba/smear-cursor.nvim"
     },
     "snacks.nvim": {
